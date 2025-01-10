@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: #d4862c;
+            padding: 20px;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        #im {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+
+        #p1 {
+            font-size: 2rem;
+            color: white;
+            margin: 0 15px;
+        }
+
+        h6 {
+            font-size: 0.9rem;
+            color: white;
+            margin-top: 10px;
+            max-width: 500px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #as1 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        #span00, #span000, #span0000 {
+            font-size: 1.2rem;
+            color: #d4862c;
+        }
+
+        #don {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        #di1, #di2, #di3 {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #di11, #di22, #di33 {
+            font-size: 1rem;
+            color: black;
+           
+        }
+        #di1 {
+            background-image: conic-gradient(#6d563b 0%, #765734 88deg, rgb(248, 248, 253) 88deg, rgb(251, 251, 252) 360deg);
+
+        }
+
+        #di2 {
+            background-image: conic-gradient(#95cd6a 0%, #63b35a 200deg, rgb(248, 248, 253) 200deg, rgb(251, 251, 252) 360deg);
+
+        }
+
+        #di3 {
+            background-image: conic-gradient(#7d5889 0%, #6f4a75 260deg, rgb(248, 248, 253) 260deg, rgb(251, 251, 252) 360deg);
+
+        }
+        #perent {
+            width: 100%;
+        }
+
+        meter {
+            width: 100%;
+            margin: 5px 0;
+        }
+        
+
+        aside#as2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 20px;
+            background-color: bisque;
+        }
+
+        footer div {
+            flex: 1;
+            height: 100px;
+        }
+
+        #fo1 {
+            background-color: #6d563b;
+        }
+
+        #fo2 {
+            background-color: #95cd6a;
+        }
+
+        #fo3 {
+            background-color: #7d5889;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="im" src="Screenshot 2024-02-08 030707.png" alt="Profile">
+        <div>
+            <p id="p1">OMNIA NASAF</p>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eum maxime eius id, similique atque impedit earum beatae nemo ducimus architecto ad possimus ipsa nam omnis odit, cum velit optio!</h6>
+        </div>
+    </header>
+
+    <main>
+        <aside id="as1">
+            <div id="span00">
+                <span>Connect Me</span>
+                <p><i class="fa-solid fa-phone"></i> : 0111-1234-344</p>
+                <p><i class="fa-solid fa-envelope"></i> : O0222gmail.com</p>
+                <p><i class="fa-brands fa-linkedin-in"></i> : LinkedIn</p>
+            </div>
+            <div id="perent">
+                <span>Languages</span>
+                <label for="m1">English</label>
+                <meter id="m1" value="60" min="0" max="100"></meter>
+                <label for="m2">German</label>
+                <meter id="m2" value="20" min="0" max="100"></meter>
+                <label for="m3">Spanish</label>
+                <meter id="m3" value="80" min="0" max="100"></meter>
+            </div>
+            <div id="span000">Skills</div>
+            <div id="don">
+                <div id="di1">
+                    <div id="di11">CSS</div>
+                </div>
+                <div id="di2">
+                    <div id="di22">HTML</div>
+                </div>
+                <div id="di3">
+                    <div id="di33">SQL</div>
+                </div>
+            </div>
+        </aside>
+
+        <aside id="as2">
+            <div class="section">
+                <div id="ach">
+                    <span>Achievements</span>
+                </div>
+                <p>
+                    <b style="color: #d4862c;">2010 PROJECT</b>
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br>
+                    <b style="color: #d4862c;">2012</b>
+                    <br>Architecto ad possimus ipsa nam omnis odit, cum velit optio!
+                </p>
+            </div>
+            <div class="section">
+                <div id="edu">
+                    <span>Education</span>
+                </div>
+                <p>
+                    <b style="color: #d4862c;">2010-2020</b>
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <br>
+                    <b style="color: #d4862c;">2010-2024</b>
+                    <br>Architecto ad possimus ipsa nam omnis odit, cum velit optio!
+                </p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div id="fo1"></div>
+        <div id="fo2"></div>
+        <div id="fo3"></div>
+    </footer>
+</body>
+
+</html>

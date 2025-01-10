@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Agu+Display&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+           /* border : 1px solid blue; */
+        }
+
+        .col-1 {
+            width: 8.33%;
+        }
+
+        .col-2 {
+            width: 16.66%;
+        }
+
+        .col-3 {
+            width: 25%;
+        }
+
+        .col-4 {
+            width: 33.33%;
+        }
+
+        .col-5 {
+            width: 41.66%;
+        }
+
+        .col-6 {
+            width: 50%;
+        }
+
+        .col-7 {
+            width: 58.33%;
+        }
+
+        .col-8 {
+            width: 66.66%;
+        }
+
+        .col-9 {
+            width: 75%;
+        }
+
+        .col-10 {
+            width: 83.33%;
+        }
+
+        .col-11 {
+            width: 91.66%;
+        }
+
+        .col-12 {
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+
+            text-align: left;
+            flex-wrap: wrap;
+        }
+
+        ul {
+
+            text-align: center;
+        }
+
+        #imm {
+            height: 50px;
+            min-width: auto;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 20px;
+            margin: 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #im {
+            text-align: right;
+        }
+
+        #se {
+            height: 200px;
+        }
+
+        #imm2 {
+            height: 200px;
+        }
+
+        #se2 {
+            text-align: center;
+
+        }
+
+        #se2 div {
+            height: 200px;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        #se2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #se3 {
+            height: 100px;
+            padding: 0px;
+            margin: 0px;
+            display: flex;
+            text-align: center;
+            flex-wrap: nowrap;
+            justify-content: space-around
+        }
+
+        #se3 div {
+            display: flex;
+            flex-wrap: nowrap;
+            padding: 0px;
+            margin: 0px;
+            height: 100px;
+        }
+
+        #se3 div p {
+            text-align: center;
+
+        }
+
+        #cl {
+            width: 100px;
+            height: 20px;
+            margin-top: 14%;
+        }
+
+        #fot {
+            height: 200px;
+            display: flex;
+        }
+
+        #imm3 {
+            margin-top: 50px;
+        }
+
+        #ab {
+            text-align: center;
+            padding: 30px;
+
+        }
+        i{
+            margin-top: 5px;
+            gap: 5px;
+        }
+        #ico p{
+            display: flex;
+            margin-right: 10px;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (max-width:612px) {
+            #im {
+                width: 100%;
+                text-align: center;
+            }
+
+            #nave {
+                width: 100%;
+                text-align: center;
+            }
+
+            ul li {
+                width: 32.33%;
+                flex-wrap: wrap;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            * {
+                background-color: rgb(254, 254, 254);
+            }
+
+            #se2 div {
+                height: 200px;
+                display: inline-block;
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            #se3 div {
+                padding: 0px;
+                margin: 0px;
+                flex-wrap: wrap;
+                display: flex;
+            }
+
+            #imm3 {
+
+                display: none;
+            }
+
+            #ab {
+                text-align: center;
+                padding: 30px;
+                width: 100%;
+                padding: 0px;
+                margin: 0px;
+
+            }
+            #ico {
+            display: flex;
+            width: 50%;
+            flex-wrap: nowrap;
+        }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div id="im" class="col-4">
+                <img id="imm" src="Screenshot 2024-11-27 024839.png">
+            </div>
+            <div id="nave" class="col-8">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Content</a></li>
+                </ul>
+            </div>
+        </header>
+        <section id="se" class="col-12"><img class="col-12" id="imm2" src="Screenshot 2024-11-17 060010.png"></section>
+        <section id="se2" class="col-12">
+            <div class="col-3 "><img src="Screenshot 2024-12-24 195504.png"></div>
+            <div class="col-3 "><img src="Screenshot 2024-12-24 195517.png"></div>
+            <div class="col-3 "><img src="Screenshot 2024-12-24 195525.png"></div>
+        </section>
+        <section id="se3" class="col-12">
+            <div class="col-5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi illo ducimus ullam aliquam
+                    blanditiis</p>
+            </div>
+            <div id="ico" class="col-5">
+                <i class="fa-brands fa-linkedin"></i>
+                <p class="text-center">Linkedin</p>
+                <i class="fa-brands fa-linkedin"></i>
+                <p class="text-center">Fecebook</p>
+                <i class="fa-brands fa-linkedin"></i>
+                <p class="text-center">Google</p>
+            </div>
+        </section>
+        <footer class="row" class="col-12" id="fot">
+            <div id="imm3" class="col-3">
+                <img class="img-thumbnail" src="cv2.png"></img>
+
+            </div>
+            <div id="ab" class="col-9">
+                <h3>About me</h3>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, corrupti optio?
+                    Similique fugit iure unde voluptatem inventore fuga eligendi exercitationem sunt quidem aliquid
+                    cumque magni consectetur, voluptas animi quam commodi.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
